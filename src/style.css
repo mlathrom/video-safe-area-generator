@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-select:focus::-ms-value {
+  @apply bg-transparent border-none;
+}
+.custom-select option {
+  @apply bg-slate-700;
+}
