@@ -3,7 +3,7 @@
     <div>
       <div class="text-center py-8">
         <h1 class="text-2xl font-bold">Safe Guides Generator</h1>
-        <p class="mt-2">The resolution will comform to the selected aspect ratio.</p>
+        <p class="mt-2">The resolution will conform to the selected aspect ratio.</p>
         <p class="mt-2">Select "Custom" to enter a custom resolution.</p>
       </div>
       <div class="">
@@ -50,6 +50,9 @@
           <button @click="downloadPNG" v-show="downloadVisible" class="px-4 py-2 bg-pink-700 rounded-lg">Download</button>
         </div>
         <canvas ref="canvasRef" :width="userInputWidth" :height="userInputHeight" class="w-full rounded-2xl transition-all duration-150"></canvas>
+      </div>
+      <div class="mt-8 text-center">
+        Built by <a href="https://www.mlathrom.com" class="underline">Matt Lathrom</a>
       </div>
     </div>
   </div>
