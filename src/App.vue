@@ -3,7 +3,7 @@
     <div>
       <div class="text-center py-8">
         <h1 class="text-2xl font-bold">Safe Guides Generator</h1>
-        <p class="mt-2">Select an aspect ration. The resolution will comform as you change it.</p>
+        <p class="mt-2">The resolution will comform to the selected aspect ratio.</p>
         <p class="mt-2">Select "Custom" to enter a custom resolution.</p>
       </div>
       <div class="">
