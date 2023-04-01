@@ -3,6 +3,8 @@
     <div>
       <div class="text-center py-8">
         <h1 class="text-2xl font-bold">Safe Guides Generator</h1>
+        <p class="mt-2">Select an aspect ration. The resolution will comform as you change it.</p>
+        <p class="mt-2">Select "Custom" to enter a custom resolution.</p>
       </div>
       <div class="">
         <form @submit.prevent="generateGuides">
@@ -25,11 +27,11 @@
                 </select>
               </div>
               <div class="w-1/3 bg-slate-700 rounded-lg">
-                <label for="width" class="block px-3 py-1 shadow-md text-sm font-bold text-slate-400">Width</label>
+                <label for="width" class="block px-3 py-1 shadow-md text-sm font-bold text-slate-300">Width</label>
                 <input type="number" v-model.number="userInputWidth" min="1" class="form-input bg-transparent border-none w-full lg:text-lg outline-none focus:outline-none">
               </div>
               <div class="w-1/3 bg-slate-700 rounded-lg">
-                <label for="height" class="block px-3 py-1 shadow-md text-sm font-bold text-slate-400">Height</label>
+                <label for="height" class="block px-3 py-1 shadow-md text-sm font-bold text-slate-300">Height</label>
                 <input type="number" v-model.number="userInputHeight" min="1" class="form-input bg-transparent border-none w-full lg:text-lg outline-none focus:outline-none">
               </div>
             </div>
@@ -62,7 +64,7 @@
   const canvasRef = ref<HTMLCanvasElement | null>(null);
   const downloadVisible = ref(false);
   
-  let aspectRatio: selectedAspectRatio;
+  let aspectRatio: number[] | null;
   
   let ctx: CanvasRenderingContext2D | null = null;
 
